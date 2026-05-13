@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>安徽金流竹艺｜非遗竹编与DIY文创材料</title>
+  <meta name="description" content="安徽金流竹艺专注于竹编DIY材料包、竹编文创产品、非遗研学课程与竹材高价值化利用。" />
+  <style>
+    :root {
+      --green: #315c3b;
+      --green-light: #557a5d;
+      --bamboo: #d7bd82;
+      --bamboo-light: #f6efd8;
+      --ink: #222222;
+      --muted: #666666;
+      --white: #ffffff;
+      --bg: #faf7ee;
+      --radius: 22px;
+      --shadow: 0 18px 45px rgba(49, 92, 59, 0.12);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Noto Sans SC", sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.7;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    .container {
+      width: min(1160px, 92%);
+      margin: 0 auto;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: rgba(250, 247, 238, 0.9);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid rgba(49, 92, 59, 0.08);
+    }
+
+    .nav {
+      height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 800;
+      color: var(--green);
+      letter-spacing: 1px;
+    }
+
+    .logo-mark {
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--green), var(--bamboo));
+      display: grid;
+      place-items: center;
+      color: var(--white);
+      font-size: 20px;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      font-size: 15px;
+      color: #314436;
+    }
+
+    .nav-links a:hover {
+      color: var(--green-light);
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 12px 22px;
+      border-radius: 999px;
+      background: var(--green);
+      color: var(--white);
+      font-weight: 600;
+      box-shadow: 0 12px 28px rgba(49, 92, 59, 0.2);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 16px 34px rgba(49, 92, 59, 0.26);
+    }
+
+    .btn.secondary {
+      background: var(--white);
+      color: var(--green);
+      box-shadow: none;
+      border: 1px solid rgba(49, 92, 59, 0.16);
+    }
+
+    .hero {
+      padding: 92px 0 76px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      width: 520px;
+      height: 520px;
+      border-radius: 50%;
+      background: rgba(215, 189, 130, 0.28);
+      right: -180px;
+      top: -140px;
+      z-index: -1;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      gap: 56px;
+      align-items: center;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: rgba(49, 92, 59, 0.08);
+      color: var(--green);
+      font-size: 14px;
+      font-weight: 700;
+      margin-bottom: 22px;
+    }
+
+    h1 {
+      font-size: clamp(42px, 6vw, 72px);
+      line-height: 1.12;
+      color: var(--green);
+      letter-spacing: -2px;
+      margin-bottom: 24px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      color: var(--muted);
+      max-width: 620px;
+      margin-bottom: 34px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    .hero-card {
+      position: relative;
+      padding: 24px;
+      background: var(--white);
+      border-radius: 34px;
+      box-shadow: var(--shadow);
+      min-height: 460px;
+      overflow: hidden;
+    }
+
+    .weave-demo {
+      height: 100%;
+      min-height: 410px;
+      border-radius: 26px;
+      background-color: var(--bamboo-light);
+      background-image:
+        linear-gradient(90deg, rgba(49,92,59,.18) 18%, transparent 18%, transparent 50%, rgba(49,92,59,.18) 50%, rgba(49,92,59,.18) 68%, transparent 68%),
+        linear-gradient(0deg, rgba(215,189,130,.72) 18%, transparent 18%, transparent 50%, rgba(215,189,130,.72) 50%, rgba(215,189,130,.72) 68%, transparent 68%);
+      background-size: 64px 64px;
+      border: 1px solid rgba(49,92,59,.08);
+      display: flex;
+      align-items: flex-end;
+      padding: 28px;
+    }
+
+    .floating-label {
+      background: rgba(255, 255, 255, 0.92);
+      border-radius: 20px;
+      padding: 18px;
+      box-shadow: 0 12px 28px rgba(0,0,0,.08);
+    }
+
+    .floating-label strong {
+      display: block;
+      color: var(--green);
+      font-size: 20px;
+      margin-bottom: 4px;
+    }
+
+    section {
+      padding: 76px 0;
+    }
+
+    .section-title {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 28px;
+      margin-bottom: 34px;
+    }
+
+    .section-title h2 {
+      font-size: clamp(30px, 4vw, 46px);
+      color: var(--green);
+      line-height: 1.2;
+    }
+
+    .section-title p {
+      color: var(--muted);
+      max-width: 460px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .card {
+      background: var(--white);
+      border-radius: var(--radius);
+      padding: 28px;
+      box-shadow: 0 10px 28px rgba(49, 92, 59, 0.08);
+      border: 1px solid rgba(49, 92, 59, 0.07);
+    }
+
+    .card-icon {
+      width: 52px;
+      height: 52px;
+      border-radius: 18px;
+      background: var(--bamboo-light);
+      display: grid;
+      place-items: center;
+      font-size: 24px;
+      margin-bottom: 18px;
+    }
+
+    .card h3 {
+      font-size: 22px;
+      color: var(--green);
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .about {
+      background: var(--green);
+      color: var(--white);
+      border-radius: 40px;
+      padding: 56px;
+      display: grid;
+      grid-template-columns: 0.85fr 1.15fr;
+      gap: 48px;
+      align-items: center;
+    }
+
+    .about h2 {
+      font-size: clamp(32px, 4vw, 50px);
+      line-height: 1.2;
+      margin-bottom: 20px;
+    }
+
+    .about p {
+      color: rgba(255,255,255,.82);
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin-top: 28px;
+    }
+
+    .stat {
+      background: rgba(255,255,255,.1);
+      border: 1px solid rgba(255,255,255,.14);
+      border-radius: 20px;
+      padding: 20px;
+    }
+
+    .stat strong {
+      display: block;
+      font-size: 28px;
+      color: var(--bamboo-light);
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+    }
+
+    .product {
+      background: var(--white);
+      border-radius: 22px;
+      overflow: hidden;
+      box-shadow: 0 10px 24px rgba(49,92,59,.08);
+      border: 1px solid rgba(49,92,59,.07);
+    }
+
+    .product-img {
+      height: 170px;
+      background: linear-gradient(135deg, #efe3bd, #f9f4e4);
+      display: grid;
+      place-items: center;
+      font-size: 54px;
+    }
+
+    .product-content {
+      padding: 18px;
+    }
+
+    .product-content h3 {
+      color: var(--green);
+      font-size: 18px;
+      margin-bottom: 6px;
+    }
+
+    .product-content p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .process {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+      counter-reset: step;
+    }
+
+    .step {
+      position: relative;
+      background: var(--bamboo-light);
+      border-radius: 22px;
+      padding: 26px;
+      border: 1px solid rgba(49,92,59,.08);
+    }
+
+    .step::before {
+      counter-increment: step;
+      content: "0" counter(step);
+      display: inline-block;
+      color: var(--green);
+      font-weight: 800;
+      margin-bottom: 18px;
+      font-size: 24px;
+    }
+
+    .step h3 {
+      color: var(--green);
+      margin-bottom: 8px;
+    }
+
+    .step p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .contact {
+      background: linear-gradient(135deg, var(--bamboo-light), #fff);
+      border-radius: 38px;
+      padding: 52px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: center;
+      box-shadow: var(--shadow);
+    }
+
+    .contact h2 {
+      font-size: clamp(30px, 4vw, 48px);
+      color: var(--green);
+      line-height: 1.2;
+      margin-bottom: 18px;
+    }
+
+    .contact p {
+      color: var(--muted);
+      margin-bottom: 24px;
+    }
+
+    .contact-list {
+      display: grid;
+      gap: 12px;
+      color: #35483b;
+    }
+
+    .contact-box {
+      background: var(--white);
+      border-radius: 22px;
+      padding: 24px;
+      border: 1px solid rgba(49,92,59,.08);
+    }
+
+    .contact-box h3 {
+      color: var(--green);
+      margin-bottom: 12px;
+    }
+
+    footer {
+      padding: 36px 0;
+      color: var(--muted);
+      text-align: center;
+      font-size: 14px;
+    }
+
+    @media (max-width: 900px) {
+      .nav-links {
+        display: none;
+      }
+
+      .hero-grid,
+      .about,
+      .contact {
+        grid-template-columns: 1fr;
+      }
+
+      .cards,
+      .product-grid,
+      .process,
+      .stats {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .about,
+      .contact {
+        padding: 36px;
+      }
+    }
+
+    @media (max-width: 560px) {
+      .hero {
+        padding-top: 58px;
+      }
+
+      .cards,
+      .product-grid,
+      .process,
+      .stats {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-actions {
+        flex-direction: column;
+      }
+
+      .btn {
+        width: 100%;
+      }
+
+      .section-title {
+        display: block;
+      }
+
+      .section-title p {
+        margin-top: 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <a href="#home" class="logo">
+        <span class="logo-mark">竹</span>
+        <span>安徽金流竹艺</span>
+      </a>
+      <nav class="nav-links">
+        <a href="#about">关于我们</a>
+        <a href="#products">产品系列</a>
+        <a href="#course">研学课程</a>
+        <a href="#contact">合作联系</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <span class="eyebrow">传统竹编 × DIY文创 × 非遗研学</span>
+          <h1>让一根竹篾，变成可以亲手完成的作品。</h1>
+          <p>
+            安徽金流竹艺专注于竹编DIY材料包、竹编文创产品与非遗体验课程，
+            将大别山竹材、传统编织技艺与现代设计结合，让竹编更年轻、更好玩、更容易上手。
+          </p>
+          <div class="hero-actions">
+            <a class="btn" href="#products">查看产品系列</a>
+            <a class="btn secondary" href="#contact">咨询合作</a>
+          </div>
+        </div>
+        <div class="hero-card" aria-label="竹编纹理展示">
+          <div class="weave-demo" style="background-image:url('fengmian.png');background-size:cover;background-position:center;">
+            <div class="floating-label">
+              <strong>从材料到作品</strong>
+              <span>适合亲子手作、学校研学、文创礼品与非遗体验。</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-title">
+          <h2>我们能提供什么？</h2>
+          <p>从竹篾材料、DIY材料包，到课程设计与活动交付，帮助更多人轻松体验竹编之美。</p>
+        </div>
+        <div class="cards">
+          <article class="card">
+            <div class="card-icon">🎋</div>
+            <h3>竹编DIY材料包</h3>
+            <p>提供竹编画、竹编扇、小船、风铃、灯笼等材料包，步骤清晰，适合零基础体验。</p>
+          </article>
+          <article class="card">
+            <div class="card-icon">🧺</div>
+            <h3>竹编文创产品</h3>
+            <p>开发杯垫、书签、摆件等竹编小物，让传统竹编进入日常生活与新媒体场景。</p>
+          </article>
+          <article class="card">
+            <div class="card-icon">📚</div>
+            <h3>非遗研学课程</h3>
+            <p>面向学校、营地、文旅空间与亲子活动，提供可落地的竹编体验课程方案。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <div class="about">
+          <div>
+            <span class="eyebrow" style="background: rgba(255,255,255,.12); color: #f6efd8;">关于安徽金流竹艺</span>
+            <h2>源于大别山竹材，也面向更年轻的生活方式。</h2>
+            <p>
+              我们希望把竹编从传统工艺展示，转化为每个人都能参与的手作体验。
+              通过标准化材料、简化步骤、优化包装与课程设计，让竹编成为学校研学、亲子活动、文创礼品和电商内容中的亮点。
+            </p>
+          </div>
+          <div>
+            <p>
+              背靠安徽金寨本地竹材资源与竹编生产经验，我们持续探索竹编工艺品创新、DIY教学产品和竹材高价值化利用，连接传统手艺与现代消费场景。
+            </p>
+            <div class="stats">
+              <div class="stat">
+                <strong>2020</strong>
+                <span>企业成立</span>
+              </div>
+              <div class="stat">
+                <strong>18+</strong>
+                <span>带动就业</span>
+              </div>
+              <div class="stat">
+                <strong>500万</strong>
+                <span>年产值约</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="products">
+      <div class="container">
+        <div class="section-title">
+          <h2>产品系列</h2>
+          <p>围绕“易上手、好拍摄、可传播、可复购”的思路，构建适合电商与研学场景的产品矩阵。</p>
+        </div>
+        <div class="product-grid">
+          <article class="product">
+            <div class="product-img" style="padding:0;height:auto;background:none;">
+              <img src="zhubianchuan.png" alt="竹编产品展示" style="width:100%;height:240px;object-fit:cover;" />
+            </div>
+            <div class="product-content">
+              <h3>竹编创意摆件</h3>
+              <p>彩色竹编结构设计，适合文创展示、空间陈列与手作课程。</p>
+            </div>
+          </article>
+
+          <article class="product">
+            <div class="product-img" style="padding:0;height:auto;background:none;">
+              <img src="zhubianhua.png" alt="竹编画产品" style="width:100%;height:240px;object-fit:cover;" />
+            </div>
+            <div class="product-content">
+              <h3>竹编相框画</h3>
+              <p>结合彩色竹篾与镂空设计，适合节庆礼品与DIY体验。</p>
+            </div>
+          </article>
+
+          <article class="product">
+            <div class="product-img" style="padding:0;height:auto;background:none;">
+              <img src="zhubianbeidian.png" alt="竹编杯垫产品" style="width:100%;height:240px;object-fit:cover;" />
+            </div>
+            <div class="product-content">
+              <h3>竹编杯垫系列</h3>
+              <p>适合电商、小红书摆拍与文创市集的竹编生活产品。</p>
+            </div>
+          </article>
+
+          <article class="product">
+            <div class="product-img">✨</div>
+            <div class="product-content">
+              <h3>定制开发</h3>
+              <p>支持课程定制、礼品定制、品牌联名和活动方案开发。</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="course">
+      <div class="container">
+        <div class="section-title">
+          <h2>研学合作流程</h2>
+          <p>适合学校、文旅空间、亲子机构、手作门店与地方非遗活动。</p>
+        </div>
+        <div class="process">
+          <article class="step">
+            <h3>需求沟通</h3>
+            <p>明确活动人数、年龄段、场地条件、预算与课程主题。</p>
+          </article>
+          <article class="step">
+            <h3>方案设计</h3>
+            <p>匹配合适产品，提供课程流程、材料清单与活动执行建议。</p>
+          </article>
+          <article class="step">
+            <h3>材料交付</h3>
+            <p>按人数准备竹篾、配件、工具与说明资料，支持批量供货。</p>
+          </article>
+          <article class="step">
+            <h3>活动呈现</h3>
+            <p>帮助完成体验课、展陈、摆拍、宣传内容与复购转化。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <div class="contact">
+          <div>
+            <h2>想做一场竹编体验，或开发一款竹编产品？</h2>
+            <p>
+              欢迎与我们联系。无论是研学课程、材料包采购、文创礼品定制，还是新媒体内容合作，都可以从一次沟通开始。
+            </p>
+            <a class="btn" href="mailto:mailto:370483473@qq.com">发送合作邮件</a>
+          </div>
+          <div class="contact-box">
+            <h3>合作方向</h3>
+            <div class="contact-list">
+              <span>📍 生产基地：安徽省六安市金寨县</span>
+              <span>🎋 主营方向：竹编材料、DIY材料包、竹编文创</span>
+              <span>📚 合作场景：学校研学、亲子活动、文旅市集、品牌礼品</span>
+              <span>☎️ 联系电话：18715648588</span>
+              <span>💬 微信咨询：18715648588（微信同号）</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      © 2026 安徽金流竹艺有限公司 / 安徽金流竹艺. 保留所有权利。
+    </div>
+  </footer>
+</body>
+</html>
