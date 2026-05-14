@@ -3,11 +3,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>安徽金流竹艺｜非遗竹编与DIY文创材料</title>
-  <meta name="description" content="安徽金流竹艺专注于竹编DIY材料包、竹编文创产品、非遗研学课程与竹材高价值化利用。" />
+  <title>安徽金流竹艺有限公司｜非遗竹编｜竹编DIY材料包｜竹编研学课程</title>
+  <meta name="description" content="安徽金流竹艺有限公司位于安徽金寨，专注竹编DIY材料包、非遗竹编文创产品、竹编研学课程与传统竹编工艺推广，提供竹编画、竹编杯垫、竹编小船等产品与定制合作。" />
+  <meta name="keywords" content="安徽金流竹艺,金流竹艺,非遗竹编,竹编DIY,竹编材料包,竹编研学,竹编文创,安徽竹编,金寨竹编,手工竹编" />
+  <meta name="author" content="安徽金流竹艺有限公司" />
+  <meta property="og:title" content="安徽金流竹艺有限公司｜非遗竹编与DIY文创材料" />
+  <meta property="og:description" content="专注竹编DIY材料包、竹编文创产品与非遗研学课程，让传统竹编更年轻、更好玩、更容易上手。" />
+  <meta property="og:image" content="fengmian.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.jinliuzhuyi.com" />
   <style>
     :root {
       --green: #315c3b;
+      --green-dark: #204128;
       --green-light: #557a5d;
       --bamboo: #d7bd82;
       --bamboo-light: #f6efd8;
@@ -25,11 +33,15 @@
       box-sizing: border-box;
     }
 
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Noto Sans SC", sans-serif;
       color: var(--ink);
       background: var(--bg);
-      line-height: 1.7;
+      line-height: 1.75;
     }
 
     a {
@@ -51,7 +63,7 @@
       position: sticky;
       top: 0;
       z-index: 10;
-      background: rgba(250, 247, 238, 0.9);
+      background: rgba(250, 247, 238, 0.92);
       backdrop-filter: blur(14px);
       border-bottom: 1px solid rgba(49, 92, 59, 0.08);
     }
@@ -73,14 +85,15 @@
     }
 
     .logo-mark {
-      width: 38px;
-      height: 38px;
+      width: 40px;
+      height: 40px;
       border-radius: 50%;
       background: linear-gradient(135deg, var(--green), var(--bamboo));
       display: grid;
       place-items: center;
       color: var(--white);
       font-size: 20px;
+      box-shadow: 0 10px 24px rgba(49, 92, 59, 0.18);
     }
 
     .nav-links {
@@ -89,6 +102,7 @@
       gap: 28px;
       font-size: 15px;
       color: #314436;
+      font-weight: 600;
     }
 
     .nav-links a:hover {
@@ -104,7 +118,7 @@
       border-radius: 999px;
       background: var(--green);
       color: var(--white);
-      font-weight: 600;
+      font-weight: 700;
       box-shadow: 0 12px 28px rgba(49, 92, 59, 0.2);
       transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
@@ -130,18 +144,18 @@
     .hero::before {
       content: "";
       position: absolute;
-      width: 520px;
-      height: 520px;
+      width: 560px;
+      height: 560px;
       border-radius: 50%;
       background: rgba(215, 189, 130, 0.28);
-      right: -180px;
-      top: -140px;
+      right: -200px;
+      top: -160px;
       z-index: -1;
     }
 
     .hero-grid {
       display: grid;
-      grid-template-columns: 1.05fr 0.95fr;
+      grid-template-columns: 1.02fr 0.98fr;
       gap: 56px;
       align-items: center;
     }
@@ -154,7 +168,7 @@
       background: rgba(49, 92, 59, 0.08);
       color: var(--green);
       font-size: 14px;
-      font-weight: 700;
+      font-weight: 800;
       margin-bottom: 22px;
     }
 
@@ -181,41 +195,18 @@
 
     .hero-card {
       position: relative;
-      padding: 24px;
+      padding: 18px;
       background: var(--white);
       border-radius: 34px;
       box-shadow: var(--shadow);
-      min-height: 460px;
       overflow: hidden;
     }
 
-    .weave-demo {
-      height: 100%;
-      min-height: 410px;
+    .hero-card img {
+      width: 100%;
+      min-height: 420px;
+      object-fit: cover;
       border-radius: 26px;
-      background-color: var(--bamboo-light);
-      background-image:
-        linear-gradient(90deg, rgba(49,92,59,.18) 18%, transparent 18%, transparent 50%, rgba(49,92,59,.18) 50%, rgba(49,92,59,.18) 68%, transparent 68%),
-        linear-gradient(0deg, rgba(215,189,130,.72) 18%, transparent 18%, transparent 50%, rgba(215,189,130,.72) 50%, rgba(215,189,130,.72) 68%, transparent 68%);
-      background-size: 64px 64px;
-      border: 1px solid rgba(49,92,59,.08);
-      display: flex;
-      align-items: flex-end;
-      padding: 28px;
-    }
-
-    .floating-label {
-      background: rgba(255, 255, 255, 0.92);
-      border-radius: 20px;
-      padding: 18px;
-      box-shadow: 0 12px 28px rgba(0,0,0,.08);
-    }
-
-    .floating-label strong {
-      display: block;
-      color: var(--green);
-      font-size: 20px;
-      margin-bottom: 4px;
     }
 
     section {
@@ -238,7 +229,7 @@
 
     .section-title p {
       color: var(--muted);
-      max-width: 460px;
+      max-width: 520px;
     }
 
     .cards {
@@ -272,9 +263,15 @@
       margin-bottom: 10px;
     }
 
-    .card p {
+    .card p,
+    .card li {
       color: var(--muted);
       font-size: 15px;
+    }
+
+    .card ul {
+      padding-left: 18px;
+      margin-top: 10px;
     }
 
     .about {
@@ -286,6 +283,7 @@
       grid-template-columns: 0.85fr 1.15fr;
       gap: 48px;
       align-items: center;
+      box-shadow: var(--shadow);
     }
 
     .about h2 {
@@ -295,7 +293,8 @@
     }
 
     .about p {
-      color: rgba(255,255,255,.82);
+      color: rgba(255,255,255,.84);
+      margin-bottom: 14px;
     }
 
     .stats {
@@ -320,39 +319,54 @@
 
     .product-grid {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 18px;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
     }
 
     .product {
       background: var(--white);
-      border-radius: 22px;
+      border-radius: 24px;
       overflow: hidden;
       box-shadow: 0 10px 24px rgba(49,92,59,.08);
       border: 1px solid rgba(49,92,59,.07);
     }
 
-    .product-img {
-      height: 170px;
-      background: linear-gradient(135deg, #efe3bd, #f9f4e4);
-      display: grid;
-      place-items: center;
-      font-size: 54px;
+    .product-img img {
+      width: 100%;
+      height: 260px;
+      object-fit: cover;
     }
 
     .product-content {
-      padding: 18px;
+      padding: 22px;
     }
 
     .product-content h3 {
       color: var(--green);
-      font-size: 18px;
-      margin-bottom: 6px;
+      font-size: 22px;
+      margin-bottom: 8px;
     }
 
     .product-content p {
       color: var(--muted);
-      font-size: 14px;
+      font-size: 15px;
+      margin-bottom: 12px;
+    }
+
+    .tag-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 14px;
+    }
+
+    .tag {
+      font-size: 13px;
+      color: var(--green);
+      background: rgba(49,92,59,.08);
+      padding: 5px 10px;
+      border-radius: 999px;
+      font-weight: 700;
     }
 
     .process {
@@ -375,7 +389,7 @@
       content: "0" counter(step);
       display: inline-block;
       color: var(--green);
-      font-weight: 800;
+      font-weight: 900;
       margin-bottom: 18px;
       font-size: 24px;
     }
@@ -388,6 +402,31 @@
     .step p {
       color: var(--muted);
       font-size: 14px;
+    }
+
+    .article-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 22px;
+    }
+
+    .article {
+      background: var(--white);
+      border-radius: 24px;
+      padding: 28px;
+      border: 1px solid rgba(49,92,59,.07);
+      box-shadow: 0 10px 24px rgba(49,92,59,.06);
+    }
+
+    .article h3 {
+      color: var(--green);
+      font-size: 24px;
+      margin-bottom: 12px;
+    }
+
+    .article p {
+      color: var(--muted);
+      margin-bottom: 12px;
     }
 
     .contact {
@@ -452,7 +491,8 @@
       .cards,
       .product-grid,
       .process,
-      .stats {
+      .stats,
+      .article-grid {
         grid-template-columns: 1fr 1fr;
       }
 
@@ -470,7 +510,8 @@
       .cards,
       .product-grid,
       .process,
-      .stats {
+      .stats,
+      .article-grid {
         grid-template-columns: 1fr;
       }
 
@@ -489,13 +530,17 @@
       .section-title p {
         margin-top: 12px;
       }
+
+      .hero-card img {
+        min-height: 260px;
+      }
     }
   </style>
 </head>
 <body>
   <header>
     <div class="container nav">
-      <a href="#home" class="logo">
+      <a href="#home" class="logo" aria-label="安徽金流竹艺首页">
         <span class="logo-mark">竹</span>
         <span>安徽金流竹艺</span>
       </a>
@@ -503,6 +548,7 @@
         <a href="#about">关于我们</a>
         <a href="#products">产品系列</a>
         <a href="#course">研学课程</a>
+        <a href="#culture">非遗竹编</a>
         <a href="#contact">合作联系</a>
       </nav>
     </div>
@@ -523,13 +569,8 @@
             <a class="btn secondary" href="#contact">咨询合作</a>
           </div>
         </div>
-        <div class="hero-card" aria-label="竹编纹理展示">
-          <div class="weave-demo" style="background-image:url('fengmian.png');background-size:cover;background-position:center;">
-            <div class="floating-label">
-              <strong>从材料到作品</strong>
-              <span>适合亲子手作、学校研学、文创礼品与非遗体验。</span>
-            </div>
-          </div>
+        <div class="hero-card">
+          <img src="fengmian.png" alt="安徽金流竹艺非遗竹编DIY材料包与手工体验展示" />
         </div>
       </div>
     </section>
@@ -544,7 +585,7 @@
           <article class="card">
             <div class="card-icon">🎋</div>
             <h3>竹编DIY材料包</h3>
-            <p>提供竹编画、竹编扇、小船、风铃、灯笼等材料包，步骤清晰，适合零基础体验。</p>
+            <p>提供竹编画、竹编小船、竹编风铃、竹编扇、竹编灯笼等材料包，步骤清晰，适合零基础体验。</p>
           </article>
           <article class="card">
             <div class="card-icon">🧺</div>
@@ -567,13 +608,16 @@
             <span class="eyebrow" style="background: rgba(255,255,255,.12); color: #f6efd8;">关于安徽金流竹艺</span>
             <h2>源于大别山竹材，也面向更年轻的生活方式。</h2>
             <p>
-              我们希望把竹编从传统工艺展示，转化为每个人都能参与的手作体验。
-              通过标准化材料、简化步骤、优化包装与课程设计，让竹编成为学校研学、亲子活动、文创礼品和电商内容中的亮点。
+              安徽金流竹艺有限公司成立于2020年，生产基地位于安徽省六安市金寨县流波䃥镇。
+              公司依托大别山区丰富的毛竹资源，长期专注于竹编材料、竹编DIY产品与非遗竹编文化推广。
+            </p>
+            <p>
+              我们希望降低竹编的学习门槛，让更多年轻人、儿童与手工爱好者能够真正接触并体验传统竹编工艺。
             </p>
           </div>
           <div>
             <p>
-              背靠安徽金寨本地竹材资源与竹编生产经验，我们持续探索竹编工艺品创新、DIY教学产品和竹材高价值化利用，连接传统手艺与现代消费场景。
+              公司持续探索传统竹编与现代设计、AI创意、美学生活之间的融合方式，产品覆盖竹编DIY材料包、彩色竹篾材料、竹编文创产品、竹编研学课程与非遗手工体验活动。
             </p>
             <div class="stats">
               <div class="stat">
@@ -594,48 +638,84 @@
       </div>
     </section>
 
+    <section>
+      <div class="container">
+        <div class="section-title">
+          <h2>为什么选择我们？</h2>
+          <p>我们关注的不只是产品，更是竹编材料、手作体验、课程落地与文化传播的完整闭环。</p>
+        </div>
+        <div class="cards">
+          <article class="card">
+            <div class="card-icon">🌿</div>
+            <h3>大别山竹材</h3>
+            <p>精选优质毛竹原料，保留天然竹材质感，适合手工体验、材料包开发与文创产品制作。</p>
+          </article>
+          <article class="card">
+            <div class="card-icon">🤲</div>
+            <h3>易上手体验</h3>
+            <p>将复杂竹编工艺拆解为可学习、可完成、可展示的步骤，让零基础用户也能获得成就感。</p>
+          </article>
+          <article class="card">
+            <div class="card-icon">🏫</div>
+            <h3>适合教学场景</h3>
+            <p>适用于学校课程、亲子活动、研学基地、文旅市集、非遗体验与企业礼品定制。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <section id="products">
       <div class="container">
         <div class="section-title">
           <h2>产品系列</h2>
-          <p>围绕“易上手、好拍摄、可传播、可复购”的思路，构建适合电商与研学场景的产品矩阵。</p>
+          <p>围绕“易上手、好拍摄、可传播、可复购”的思路，构建适合电商与研学场景的竹编产品矩阵。</p>
         </div>
         <div class="product-grid">
           <article class="product">
-            <div class="product-img" style="padding:0;height:auto;background:none;">
-              <img src="zhubianchuan.png" alt="竹编产品展示" style="width:100%;height:240px;object-fit:cover;" />
+            <div class="product-img">
+              <img src="zhubianchuan.png" alt="竹编船系列产品展示" />
             </div>
             <div class="product-content">
-              <h3>竹编创意摆件</h3>
-              <p>彩色竹编结构设计，适合文创展示、空间陈列与手作课程。</p>
+              <h3>竹编船系列</h3>
+              <p>竹编小船兼具结构趣味与展示效果，适合手工课程、研学体验、文创摆件与活动展示。</p>
+              <p>从竹篾弯折、交错固定到造型完成，用户能够直观理解竹材柔韧性与传统编织结构。</p>
+              <div class="tag-list">
+                <span class="tag">手作体验</span>
+                <span class="tag">研学课程</span>
+                <span class="tag">文创摆件</span>
+              </div>
             </div>
           </article>
 
           <article class="product">
-            <div class="product-img" style="padding:0;height:auto;background:none;">
-              <img src="zhubianhua.png" alt="竹编画产品" style="width:100%;height:240px;object-fit:cover;" />
+            <div class="product-img">
+              <img src="zhubianhua.png" alt="竹编画系列产品展示" />
             </div>
             <div class="product-content">
-              <h3>竹编相框画</h3>
-              <p>结合彩色竹篾与镂空设计，适合节庆礼品与DIY体验。</p>
+              <h3>竹编画系列</h3>
+              <p>竹编画将彩色竹篾与镂空图案结合，适合节庆礼品、儿童手作、学校课程与非遗体验。</p>
+              <p>通过简单编织与图案叠加，让竹编从传统工艺变成更容易理解、更适合传播的视觉作品。</p>
+              <div class="tag-list">
+                <span class="tag">竹编DIY</span>
+                <span class="tag">节庆礼品</span>
+                <span class="tag">亲子手工</span>
+              </div>
             </div>
           </article>
 
           <article class="product">
-            <div class="product-img" style="padding:0;height:auto;background:none;">
-              <img src="zhubianbeidian.png" alt="竹编杯垫产品" style="width:100%;height:240px;object-fit:cover;" />
+            <div class="product-img">
+              <img src="zhubianbeidian.png" alt="竹编杯垫系列产品展示" />
             </div>
             <div class="product-content">
               <h3>竹编杯垫系列</h3>
-              <p>适合电商、小红书摆拍与文创市集的竹编生活产品。</p>
-            </div>
-          </article>
-
-          <article class="product">
-            <div class="product-img">✨</div>
-            <div class="product-content">
-              <h3>定制开发</h3>
-              <p>支持课程定制、礼品定制、品牌联名和活动方案开发。</p>
+              <p>竹编杯垫是兼具实用性与装饰性的生活文创产品，适合电商、小红书摆拍、文创市集与礼品场景。</p>
+              <p>产品结合竹材肌理、彩色编织与现代造型，让传统竹编更自然地进入日常生活。</p>
+              <div class="tag-list">
+                <span class="tag">生活美学</span>
+                <span class="tag">文创礼品</span>
+                <span class="tag">电商产品</span>
+              </div>
             </div>
           </article>
         </div>
@@ -651,7 +731,7 @@
         <div class="process">
           <article class="step">
             <h3>需求沟通</h3>
-            <p>明确活动人数、年龄段、场地条件、预算与课程主题。</p>
+            <p>明确活动人数、年龄段、场地条件、预算范围与课程主题。</p>
           </article>
           <article class="step">
             <h3>方案设计</h3>
@@ -669,24 +749,73 @@
       </div>
     </section>
 
+    <section id="culture">
+      <div class="container">
+        <div class="section-title">
+          <h2>非遗竹编与竹文化</h2>
+          <p>让传统工艺被使用、被体验、被重新创造，是我们理解非遗传承的方式。</p>
+        </div>
+        <div class="article-grid">
+          <article class="article">
+            <h3>什么是竹编？</h3>
+            <p>
+              竹编是中国传统手工艺的重要组成部分。匠人将竹材剖篾、修整、编织，通过经纬交错形成稳定结构，最终制作出器具、装饰品与生活用品。
+            </p>
+            <p>
+              竹编不仅是一种工艺，更是一种关于自然、秩序与耐心的文化表达。竹材轻巧、坚韧、富有弹性，也让竹编作品具有独特的东方美感。
+            </p>
+          </article>
+          <article class="article">
+            <h3>为什么要做竹编DIY？</h3>
+            <p>
+              传统竹编往往需要长时间学习，而DIY材料包可以把复杂工艺拆解成适合初学者的步骤，让更多人用较低门槛完成作品。
+            </p>
+            <p>
+              对学校、研学机构与亲子活动而言，竹编DIY不仅是一项手工活动，也是一堂关于材料、结构、传统文化与审美创造的综合实践课。
+            </p>
+          </article>
+          <article class="article">
+            <h3>竹编研学适合哪些场景？</h3>
+            <p>
+              竹编研学适合中小学劳动教育、传统文化课程、非遗体验活动、文旅研学基地、亲子手作课堂以及社区文化活动。
+            </p>
+            <p>
+              通过动手制作，参与者可以从“看见竹编”走向“理解竹编”，在完成作品的过程中获得参与感与成就感。
+            </p>
+          </article>
+          <article class="article">
+            <h3>我们的品牌理念</h3>
+            <p>
+              我们相信，传统工艺不应该只停留在展柜里。真正的非遗传承，应该进入日常生活，被更多人使用、体验和重新创造。
+            </p>
+            <p>
+              安徽金流竹艺希望以标准化材料、年轻化设计和可落地课程，让竹编成为更容易传播、更具有现代生命力的手作体验。
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <section id="contact">
       <div class="container">
         <div class="contact">
           <div>
             <h2>想做一场竹编体验，或开发一款竹编产品？</h2>
             <p>
-              欢迎与我们联系。无论是研学课程、材料包采购、文创礼品定制，还是新媒体内容合作，都可以从一次沟通开始。
+              欢迎与安徽金流竹艺联系。无论是研学课程、材料包采购、文创礼品定制，还是新媒体内容合作，都可以从一次沟通开始。
             </p>
-            <a class="btn" href="mailto:mailto:370483473@qq.com">发送合作邮件</a>
+            <a class="btn" href="mailto:370483473@qq.com">发送合作邮件</a>
           </div>
           <div class="contact-box">
-            <h3>合作方向</h3>
+            <h3>合作联系</h3>
             <div class="contact-list">
-              <span>📍 生产基地：安徽省六安市金寨县</span>
-              <span>🎋 主营方向：竹编材料、DIY材料包、竹编文创</span>
+              <span>🏢 公司名称：安徽金流竹艺有限公司</span>
+              <span>📍 生产基地：安徽省六安市金寨县流波䃥镇</span>
+              <span>🎋 主营方向：竹编材料、DIY材料包、竹编文创、非遗研学</span>
               <span>📚 合作场景：学校研学、亲子活动、文旅市集、品牌礼品</span>
               <span>☎️ 联系电话：18715648588</span>
               <span>💬 微信咨询：18715648588（微信同号）</span>
+              <span>✉️ 邮箱：370483473@qq.com</span>
             </div>
           </div>
         </div>
@@ -696,7 +825,7 @@
 
   <footer>
     <div class="container">
-      © 2026 安徽金流竹艺有限公司 / 安徽金流竹艺. 保留所有权利。
+      © 2026 安徽金流竹艺有限公司. 保留所有权利。｜ 非遗竹编 · 竹编DIY · 竹编研学
     </div>
   </footer>
 </body>
