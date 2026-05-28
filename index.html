@@ -5,13 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>安徽金流竹艺有限公司｜非遗竹编｜竹编DIY材料包｜竹编研学课程</title>
   <meta name="description" content="安徽金流竹艺有限公司位于安徽金寨，专注竹编DIY材料包、非遗竹编文创产品、竹编研学课程与传统竹编工艺推广，提供竹编画、竹编杯垫、竹编小船等产品与定制合作。" />
-  <meta name="keywords" content="安徽金流竹艺,金流竹艺,非遗竹编,竹编DIY,竹编材料包,竹编研学,竹编文创,安徽竹编,金寨竹编,手工竹编" />
+  <meta name="keywords" content="安徽金流竹艺,金流竹艺,非遗竹编,竹编DIY,竹编材料包,竹编研学,竹编文创,安徽竹编,金寨竹编,手工竹编,黄山研学,祁门红茶博物馆" />
   <meta name="author" content="安徽金流竹艺有限公司" />
   <meta property="og:title" content="安徽金流竹艺有限公司｜非遗竹编与DIY文创材料" />
   <meta property="og:description" content="专注竹编DIY材料包、竹编文创产品与非遗研学课程，让传统竹编更年轻、更好玩、更容易上手。" />
   <meta property="og:image" content="fengmian.png" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://www.jinliuzhuyi.com" />
+
   <style>
     :root {
       --green: #315c3b;
@@ -99,7 +100,7 @@
     .nav-links {
       display: flex;
       align-items: center;
-      gap: 28px;
+      gap: 22px;
       font-size: 15px;
       color: #314436;
       font-weight: 600;
@@ -429,6 +430,70 @@
       margin-bottom: 12px;
     }
 
+    .news-card {
+      background: var(--white);
+      border-radius: 32px;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      border: 1px solid rgba(49,92,59,.07);
+    }
+
+    .news-images {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0;
+    }
+
+    .news-images img {
+      width: 100%;
+      height: 360px;
+      object-fit: cover;
+    }
+
+    .news-content {
+      padding: 34px;
+    }
+
+    .news-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 16px;
+    }
+
+    .news-meta span {
+      display: inline-flex;
+      align-items: center;
+      background: rgba(49,92,59,.08);
+      color: var(--green);
+      padding: 6px 12px;
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .news-content h3 {
+      color: var(--green);
+      font-size: clamp(26px, 3vw, 36px);
+      line-height: 1.25;
+      margin-bottom: 16px;
+    }
+
+    .news-content p {
+      color: var(--muted);
+      margin-bottom: 14px;
+    }
+
+    .news-list {
+      margin-top: 18px;
+      padding-left: 20px;
+      color: var(--muted);
+    }
+
+    .news-list li {
+      margin-bottom: 8px;
+    }
+
     .contact {
       background: linear-gradient(135deg, var(--bamboo-light), #fff);
       border-radius: 38px;
@@ -492,7 +557,8 @@
       .product-grid,
       .process,
       .stats,
-      .article-grid {
+      .article-grid,
+      .news-images {
         grid-template-columns: 1fr 1fr;
       }
 
@@ -511,7 +577,8 @@
       .product-grid,
       .process,
       .stats,
-      .article-grid {
+      .article-grid,
+      .news-images {
         grid-template-columns: 1fr;
       }
 
@@ -534,6 +601,10 @@
       .hero-card img {
         min-height: 260px;
       }
+
+      .news-images img {
+        height: 260px;
+      }
     }
   </style>
 </head>
@@ -548,6 +619,7 @@
         <a href="#about">关于我们</a>
         <a href="#products">产品系列</a>
         <a href="#course">研学课程</a>
+        <a href="#news">企业动态</a>
         <a href="#culture">非遗竹编</a>
         <a href="#contact">合作联系</a>
       </nav>
@@ -746,6 +818,45 @@
             <p>帮助完成体验课、展陈、摆拍、宣传内容与复购转化。</p>
           </article>
         </div>
+      </div>
+    </section>
+
+    <section id="news">
+      <div class="container">
+        <div class="section-title">
+          <h2>企业动态</h2>
+          <p>持续学习优秀研学与文旅案例，探索非遗竹编与现代教育、文创产品、体验空间的融合路径。</p>
+        </div>
+
+        <article class="news-card">
+          <div class="news-images">
+            <img src="qimen-kaocha-1.jpg" alt="安徽金流竹艺团队在祁门红茶博物馆开展室内交流考察" />
+            <img src="qimen-kaocha-2.jpg" alt="安徽金流竹艺团队赴黄山祁门红茶博物馆进行研学考察" />
+          </div>
+          <div class="news-content">
+            <div class="news-meta">
+              <span>企业动态</span>
+              <span>黄山祁门</span>
+              <span>研学考察</span>
+              <span>非遗融合</span>
+            </div>
+            <h3>赴黄山祁门红茶博物馆考察交流，探索非遗文化与研学融合新路径</h3>
+            <p>
+              近日，安徽金流竹艺团队前往安徽黄山祁门红茶博物馆开展考察交流活动，围绕非遗文化传播、研学课程设计、传统工艺展示与产业融合等方向进行了深入学习与探讨。
+            </p>
+            <p>
+              在参观交流过程中，团队重点了解了祁门红茶在传统制作工艺展示、场馆运营、沉浸式研学体验、文创产品开发与文旅融合方面的实践经验。作为同样以传统工艺和地方文化为基础的企业，金流竹艺希望从优秀案例中学习更成熟的课程组织、空间呈现与文化传播方式。
+            </p>
+            <p>
+              此次考察为金流竹艺后续推进竹编DIY材料包、非遗研学课程和竹编体验空间建设提供了新的参考。未来，公司将持续推动竹编工艺与研学教育、文旅体验、现代设计相结合，让传统竹编文化以更加年轻化、体验化、生活化的方式进入大众视野。
+            </p>
+            <ul class="news-list">
+              <li>学习非遗文化场馆在研学课程设计、讲解体系和空间展示方面的经验。</li>
+              <li>探索竹编DIY产品与青少年劳动教育、亲子体验和文旅活动的结合方式。</li>
+              <li>推动金寨竹编、大别山竹材与现代文创产品、非遗课程体系的融合发展。</li>
+            </ul>
+          </div>
+        </article>
       </div>
     </section>
 
